@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Esta pagina te mostrara login Sufipy" />
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, inictial-scale=1.0">
+    <title>tablas Sufipy</title>
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- jQuery UI (incluyendo el widget de datepicker) -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header-cab">
+            <div class="header-cab-img">
+                <img class="header-img" src="/assets/images/logo.svg">
+            </div>
+            <div class="header-cab-close">
+                <div class="header-cab-close-text"> Cerra Sesión</div>
+                <div class="header-cab-close-icono"></div>
+            </div>
+        </header>
+
+
+        <div class="desembolso-div d-flex ">
+            <div class="desembolso-div-text">Mis desembolsos</div>
+            <button class="btn-primary-desembolso d-flex" type="submit">
+                <i class="btn-primary-desembolso-download d-inline-block"></i>
+                <span class="d-inline-block btn-primary-desembolso-text">Descargar</span>
+            </button>
+
+        </div>
+        <div class="input-desembolso-cab d-flex">
+
+            <select class="bd bdr-6 pdl-16 pdr-16 pdt-8 pdb-8 custom-select input-d bd style-select">
+                <label class="d-block w-full text-blue-plomo fz-12" for="Tipo doc">
+                    <option>Tipo doc</option>
+                </label>
+            </select>
+
+            <div class=" input-d bd bdr-6 pdl-16 pdr-16 pdt-8 pdb-8">
+                <label class="d-block w-full text-blue-plomo fz-12" for="Número de documento"></label>
+                <input class="input-d-text d-block w-full bd-none input bg-transparent" type="text"
+                    placeholder="Número de documento">
+            </div>
+            <div class=" input-d bd bdr-6 pdl-16 pdr-16 pdt-8 pdb-8">
+                <label class="d-block w-full text-blue-plomo fz-12" for="Número de desembolso"></label>
+                <input class="input-d-text d-block w-full bd-none input bg-transparent" type="text"
+                    placeholder="Número de desembolso">
+            </div>
+            <div class=" input-d bd bdr-6 pdl-16 pdr-16 pdt-8 pdb-8 wmax-170">
+                <div>
+                    <label class=" d-block w-full text-blue-plomo fz-12" for="Número de Desde"></label>
+                    <div class="position-relative pdt-9">
+                        <input type="text" id="datepicker" class="bd-none w-full bg-transparent" placeholder="Desde">
+                        <span id="datepicker-icon" class="w-full ui-icon ui-icon-calendar position-absolute r-0 t-0"></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" input-d bd bdr-6 pdl-16 pdr-16 pdt-8 pdb-8 wmax-170">
+                <div>
+                    <label class=" d-block w-full text-blue-plomo fz-12" for="Número de Desde"></label>
+                    <div class="position-relative pdt-9">
+                        <input type="text" id="datepicker" class="bd-none w-full bg-transparent" placeholder="Hasta">
+                        <span id="datepicker-icon" class="w-full ui-icon ui-icon-calendar position-absolute r-0 t-0"></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="position-relative scroll-x">
+            <table class="w-full">
+                <thead class="table-head-cab table-head">
+                    <tr class="fw-bold table-title">
+                        <td>Fecha y hora</td>
+                        <td>Número de desembolso</td>
+                        <td>Tipo de documento</td>
+                        <td>Número de documento</td>
+                        <td>Monto</td>
+                    </tr>
+                </thead>
+                <tbody class="table-body table-data">
+                    <tr>
+                        <td>00-00-0000 00:00:00</td>
+                        <td>00000000</td>
+                        <td>Cédula</td>
+                        <td>0000000000</td>
+                        <td>$000.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>00-00-0000 00:00:00</td>
+                        <td>00000000</td>
+                        <td>Cédula</td>
+                        <td>0000000000</td>
+                        <td>$000.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>00-00-0000 00:00:00</td>
+                        <td>00000000</td>
+                        <td>Cédula</td>
+                        <td>0000000000</td>
+                        <td>$000.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>00-00-0000 00:00:00</td>
+                        <td>00000000</td>
+                        <td>Cédula</td>
+                        <td>0000000000</td>
+                        <td>$000.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>00-00-0000 00:00:00</td>
+                        <td>00000000</td>
+                        <td>Cédula</td>
+                        <td>0000000000</td>
+                        <td>$000.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>00-00-0000 00:00:00</td>
+                        <td>00000000</td>
+                        <td>Cédula</td>
+                        <td>0000000000</td>
+                        <td>$000.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>00-00-0000 00:00:00</td>
+                        <td>00000000</td>
+                        <td>Cédula</td>
+                        <td>0000000000</td>
+                        <td>$000.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>00-00-0000 00:00:00</td>
+                        <td>00000000</td>
+                        <td>Cédula</td>
+                        <td>0000000000</td>
+                        <td>$000.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>00-00-0000 00:00:00</td>
+                        <td>00000000</td>
+                        <td>Cédula</td>
+                        <td>0000000000</td>
+                        <td>$000.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>00-00-0000 00:00:00</td>
+                        <td>00000000</td>
+                        <td>Cédula</td>
+                        <td>0000000000</td>
+                        <td>$000.000.000</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="position-absolute paginator bg-white center l-0">
+
+                <div class="pager-inicio bd bdr-6 pdl-16 pdr-16 pdt-8 pdb-8">
+
+                    <div class="page-flecha-caj">
+                        <button class="page-flecha"></button>
+                    </div>
+
+                    <div class="pager-container">
+                        <div class="bd bdr-6 pdl-16 pdr-16 pdt-8 pdb-8 pager-start">
+                            <label class="d-block w-full text-blue-plomo fz-12" for="1"></label>
+                            <input class="input-1 d-block w-full bd-none input" placeholder="1" type="text">
+                        </div>
+                    </div>
+
+                    <div class="pager-end">de 10</div>
+
+                    <div class="page-flecha-caj">
+                        <button class="page-flecha pf-right"></button>
+                    </div>
+                    <div class="bd bdr-6 pdl-16 pdr-16 pdt-8 pdb-8 wrapper-select">
+                        <labe class="d-block w-full text-blue-plomo fz-12">Registro por pàginas</label>
+                            <select class="custom-select bd-none">
+                                <option value="">16</option>
+                            </select>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="position-absolute w-236 bg-white r-0 alert">
+                <a href="" class="text-white bg-red position-absolute r-0 btn-close">x</a>
+
+                Pedro Pérez ha hecho una compra por valor de <span class="fw-bold">$1.800.000</span>
+            </div>
+
+
+
+        </div>
+        <div></div>
+        <div></div>
+    </div>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            // Inicializar el datepicker
+            $("#datepicker").datepicker();
+
+            // Agregar el ícono al lado del datepicker
+            $("#datepicker-icon").click(function () {
+                $("#datepicker").datepicker("show");
+            });
+        });     
+    </script>
+</body>
+
+</html>
